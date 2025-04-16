@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+:root {
+    --bgcolor: #1c1c1c;
+    --primary-blue: #0165B4;
+    --white: #ffffff;
+    --accentocolor: #ffcc00; 
+}
+
+body {
+    background: var(--bgcolor);
+    font-family: Arial, sans-serif;
+}
+
+.linktree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-blue);
+    width: 90vw;
+    margin: 40px auto;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.linktree img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+
+.linktree h1 {
+    font-size: 2rem;
+}
+
+.linktree a {
+    background-color: var(--white);
+    color: var(--bgcolor);
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid var(--primary-blue);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.linktree a:hover {
+    background-color: var(--bgcolor);
+    color: var(--accentocolor);
+}
+
+@media (min-width: 1024px) {
+    .linktree {
+        width: 40vw;
+    }
+}
