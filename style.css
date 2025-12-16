@@ -1,5 +1,5 @@
 :root {
-    --bg-color-light: #f4f4f4;
+    --bg-color-light:linear-gradient(to right, #a9c1d3, rgb(238, 237, 237));
     --text-color-light: #1c1c1c;
     --box-color-light: #ffffff;
     --container-color-light: #dddddd;
@@ -18,7 +18,8 @@
 }
 
 body {
-    background-color: var(--bg-color-light);
+    /* background-color: var(--bg-color-light); */
+    background: var(--bg-color-light);
     color: var(--text-color-light);
     font-family: 'Arial', sans-serif;
     display: flex;
